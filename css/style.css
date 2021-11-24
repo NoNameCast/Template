@@ -134,7 +134,7 @@ h1, h2, h3, p, a {
 
 .middle__screen {
     padding-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 48px;
 }
 
 .middle__title {
@@ -161,16 +161,19 @@ h1, h2, h3, p, a {
     position: relative;
     list-style: none;
     display: flex;
-    justify-content: space-around;
     counter-reset: myCounter;
+    width: 1077px;
+    margin: 0 auto;
+
 }
 
 .middle__item {
+    position: relative;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
     color: black;
-    width: 196px;
+    width: 250px;
     text-align: center;
 }
 
@@ -184,9 +187,10 @@ h1, h2, h3, p, a {
     font-size: 57px;
     background: #23C7EC;
     border-radius: 50%;
-    bottom: 60px;
+    bottom: 70px;
     padding-top: 50px;
     text-align: center;
+    left: 63px;
 }
 
 .bottom__screen {
@@ -195,7 +199,7 @@ h1, h2, h3, p, a {
     color: var(--text-color);
     height: 621px;
     background-size: 100%;
-    padding-top: 70px;
+    padding-top: 98px;
 }
 
 .bottom__title {
@@ -224,6 +228,11 @@ h1, h2, h3, p, a {
     padding-left: 25px;
     opacity: 0.5;
 }
+
+#email {
+    margin-bottom: 50px;
+}
+
 
 .bottom__button {
     display: block;
@@ -257,14 +266,14 @@ h1, h2, h3, p, a {
 .nav__footer{
     display: flex;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 75px;
     color: var(--text-color);
     gap: 300px;
 }
 
 .bottom__copyright {
     background: url(../img/logo.png) no-repeat;
-    width: 210px;
+    width: 220px;
     height: 68px;
     font-weight: 500;
     font-size: 12px;
