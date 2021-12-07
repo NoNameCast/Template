@@ -101,6 +101,11 @@ h1, h2, h3, p, a {
 .top__tel-text {
     font-size: 16px;
     text-align: center;
+    text-decoration: underline white 1px;
+}
+
+.top__title-text-adapive {
+    display: none;
 }
 
 .top__main {
@@ -136,16 +141,12 @@ h1, h2, h3, p, a {
     line-height: 23px;
 }
 
-.middle__screen {
-    padding-top: 70px;
-    margin-bottom: 48px;
-}
-
 .middle__title {
     font-weight: bold;
     font-size: 35px;
     line-height: 41px;
     margin-bottom: 25px;
+    padding-top: 70px; 
 }
 
 .middle__about {
@@ -203,10 +204,10 @@ h1, h2, h3, p, a {
     color: var(--text-color);
     height: 621px;
     background-size: 100%;
-    padding-top: 98px;
 }
 
 .bottom__title {
+    padding-top: 98px;
     font-size: 35px;
     line-height: 41px;
     margin-bottom: 16px;
@@ -300,6 +301,14 @@ h1, h2, h3, p, a {
 
 @media (max-width: 1024px) {
 
+    .bottom__madeby-adaptive {
+        display: none;
+    }
+
+    top__title-text-adapive {
+        display: none;
+    }
+
     .top__screen {
         background: url(../img/background_1024.png) no-repeat;
         background-size: cover;
@@ -312,6 +321,16 @@ h1, h2, h3, p, a {
         margin-right: 30px;
         margin-bottom: 70px;
         padding-top: 26px;
+    }
+
+    .top__logo-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .top__tel {
+        padding-top: 5px;
+        margin-bottom: 6px;
     }
 
     .top__title {
@@ -330,6 +349,27 @@ h1, h2, h3, p, a {
         margin-bottom: 60px;
     }
 
+    .container__middle {
+        height: 515px;
+    }
+
+    .middle__title {
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    .middle__about {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 33px;
+    }
+
+    .middle__text {
+        width: 666px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
     .middle__list {
         width: 870px;
         margin: 0px 76px;
@@ -343,18 +383,30 @@ h1, h2, h3, p, a {
     }
 
     .middle__item:before {
-        left: 50px;
+        left: 55px;
+        bottom: 75px;
+        width: 104px;
+        height: 104px;
+        font-size: 52px;
+        padding-top: 40px;
     }
 
     .bottom__screen {
         height: 558px;
-        padding-top: 70px;
         background: url(../img/background_bot_1024.png) no-repeat;
     }
 
-    .bottom__title-text {
-        width: 380px;
+    .bottom__title {
         font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 16px;
+        padding-top: 70px;
+    }
+
+    .bottom__title-text {
+        width: 475px;
+        font-size: 32px;
+        line-height: 23px;
     }
 
     .bottom__title-text {
@@ -367,6 +419,11 @@ h1, h2, h3, p, a {
         width: 377px;
         height: 39px;
         margin-bottom: 20px;
+    }
+
+    .bottom__text {
+        font-size: 17px;
+        line-height: 20px;
     }
 
     .bottom__button {
@@ -389,27 +446,58 @@ h1, h2, h3, p, a {
         line-height: 15px;
     }
 
+    .nav__footer {
+        padding-top: 38px;
+    }
+
     .bottom__copyright {
-        width: 100%;
+        background: url(../img/logo-bottom_1024.svg) no-repeat;
+        width: 80%;
         font-size: 12px;
         line-height: 17px;
+        font-size: 12px;
+        line-height: 17px;
+        padding-top: 15px;
     }
 
     .bottom__madeby {
         width: 100%;
+        font-size: 12px;
+        line-height: 17px;
+        padding-top: 0px;
     }
 
     .bottom__tel {
         width: 100%;
+        padding-top: 5px;
+        font-size: 21px;
+        line-height: 25px;
+        padding-left: 30px;
+    }
+
+    .bottom__text {
+        font-size: 13px;
+        line-height: 15px;
     }
 
 }
 
 @media (max-width: 320px) {
+
     .top__screen {
         background: url(../img/background_320.png) no-repeat;
         background-size: cover;
-        height: 100%;
+        height: 441px;
+    }
+
+    .top__menu {
+        padding-top: 15px;
+        margin: 0 13px;
+    }
+
+    .top__logo-img {
+        width: 30px;
+        height: 30px;
     }
 
     .top__title {
@@ -426,6 +514,7 @@ h1, h2, h3, p, a {
         display: block;
         width: 24px;
         height: 24px;
+        padding-top: 5px;
     }
 
     .top__logo-img {
@@ -438,17 +527,34 @@ h1, h2, h3, p, a {
     }
 
     .top__title-text {
-        width: 290px;
-        font-size: 14px;
-        line-height: 19.69px;
+        display: none;
     }
+
+    .top__title-text-adapive {
+        width: 290px;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 53px;
+    }
+
+    .top__button {
+        width: 160px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 9px 29px;
+    }
+
     .middle__screen {
-        height: 100%;
+        height: 1176px;
     }
 
     .middle__title {
+        padding-top: 30px;
         font-size: 20px;
         line-height: 23px;
+        margin-bottom: 15px;
     }
 
     .middle__about {
@@ -470,10 +576,17 @@ h1, h2, h3, p, a {
     }
 
     .middle__item:before {
-        left: 20px;
+        left: 32px;
+        bottom: 90px;
+    }
+
+    .bottom__screen {
+        background: url(../img/background_bot_320.png) no-repeat;
+        height: 398px;
     }
 
     .bottom__title {
+        padding-top: 30px;
         font-size: 20px;
         line-height: 23px;
     }
@@ -483,12 +596,19 @@ h1, h2, h3, p, a {
         font-size: 12px;
         line-height: 14px;
         width: 290px;
+        margin-bottom: 35px;
     }
 
     .bottom__input-item {
         width: 290px;
+        height: 28px;
         font-size: 14px;
         line-height: 16px;
+        margin-bottom: 15px;
+    }
+
+    #email {
+        margin-bottom: 45px;
     }
 
     .bottom__button {
@@ -497,6 +617,7 @@ h1, h2, h3, p, a {
         font-size: 16px;
         line-height: 19px;
         padding: 10px 26px;
+        margin-bottom: 28px;
     }
 
     .bottom__text {
@@ -540,6 +661,7 @@ h1, h2, h3, p, a {
     }
 
     .bottom__madeby-adaptive {
+        display: block;
         padding-top: 15px;
         font-weight: 500;
         font-size: 12px;
